@@ -1,7 +1,5 @@
 package com.verint.pages;
 
-import com.verint.utils.ConfigReader;
-import com.verint.utils.InteractionUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

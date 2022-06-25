@@ -1,7 +1,7 @@
 package com.verint.stepDefinitions;
 
 import com.verint.pages.SearchPage;
-import com.verint.utils.manager.DriverManager;
+import com.verint.utils.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -9,8 +9,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-
-import java.sql.Driver;
 
 public class SearchSteps {
 

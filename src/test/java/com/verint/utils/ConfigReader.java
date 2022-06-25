@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
+    /**
+     * ConfigReader class handle the reading of the properties file and also
+     * acts as the getter for the property
+     */
 
     private Properties properties;
 

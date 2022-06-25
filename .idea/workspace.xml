@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Implement the Page Object Model and the step definitions for Search.feature">
+    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Refactor the location of the utils classes and also clean up the comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/InteractionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/pages/InteractionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/manager/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/utils/DriverManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +50,7 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.verint.utils" />
+      <recent name="com.verint.pages" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.TestRunner">
@@ -132,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656163110650</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implement and prettify the reporting feature after running the test">
+      <created>1656164803712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656164803713</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +161,9 @@
     <MESSAGE value="Set up the skeleton files for cucumber testing and fill the feature file" />
     <MESSAGE value="Add DriverManager to handle web driver and ConfigReader to read properties file" />
     <MESSAGE value="Implement the Page Object Model and the step definitions for Search.feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the Page Object Model and the step definitions for Search.feature" />
+    <MESSAGE value="Implement and prettify the reporting feature after running the test" />
+    <MESSAGE value="Refactor the location of the utils classes and also clean up the comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor the location of the utils classes and also clean up the comments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
