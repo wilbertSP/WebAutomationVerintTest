@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Refactor the location of the utils classes and also clean up the comments">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Add README file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/pages/InteractionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/pages/InteractionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/utils/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/utils/DriverManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +44,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -145,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656167286745</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add README file">
+      <created>1656169520779</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656169520779</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +177,8 @@
     <MESSAGE value="Implement the Page Object Model and the step definitions for Search.feature" />
     <MESSAGE value="Implement and prettify the reporting feature after running the test" />
     <MESSAGE value="Refactor the location of the utils classes and also clean up the comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor the location of the utils classes and also clean up the comments" />
+    <MESSAGE value="Add README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

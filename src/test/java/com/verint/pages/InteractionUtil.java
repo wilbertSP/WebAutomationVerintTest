@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.List;
 
@@ -34,7 +33,6 @@ public abstract class InteractionUtil {
         for (char i : input.toCharArray()) {
             element.sendKeys(String.valueOf(i));
         }
-
         return element;
     }
 
@@ -48,7 +46,6 @@ public abstract class InteractionUtil {
         }
 
         List<WebElement> list = driver.findElements(by);
-
         boolean textExists = false;
 
         for (WebElement e : list) {
@@ -68,6 +65,5 @@ public abstract class InteractionUtil {
         } catch (TimeoutException e) {
             return false;
         }
-
     }
 }

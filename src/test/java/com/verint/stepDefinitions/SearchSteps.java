@@ -11,7 +11,6 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class SearchSteps {
-
     private final DriverManager driverManager;
     private WebDriver driver;
     private SearchPage searchPage;

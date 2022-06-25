@@ -1,6 +1,5 @@
 package com.verint.utils;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,10 +7,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
-
 import java.time.Duration;
-
-import static org.junit.Assert.fail;
+import org.junit.Assert;
 
 public class DriverManager {
     /**
@@ -26,9 +23,7 @@ public class DriverManager {
         browserType = reader.getBrowser();
         timeOut = reader.getTimeOut();
     }
-
     public WebDriver getWebDriver() {
-
         if (browserType.toLowerCase().contains("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -44,9 +39,8 @@ public class DriverManager {
             WebDriverManager.safaridriver().setup();
             driver = new SafariDriver();
         } else {
-            fail("Browser is not supported");
+            Assert.fail("Browser is not supported");
         }
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
         return driver;
     }

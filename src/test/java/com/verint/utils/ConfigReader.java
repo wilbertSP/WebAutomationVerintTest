@@ -10,11 +10,9 @@ public class ConfigReader {
      * ConfigReader class handle the reading of the properties file and also
      * acts as the getter for the property
      */
-
     private Properties properties;
 
     public ConfigReader() {
-
         FileReader reader;
         String configPath = "src/test/resources/config/config.properties";
 
@@ -45,6 +43,4 @@ public class ConfigReader {
         String time = properties.getProperty("timeOut");
         return Integer.parseInt(time);
     }
-
-
 }
