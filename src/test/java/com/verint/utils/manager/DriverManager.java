@@ -5,8 +5,11 @@ import com.verint.utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -33,10 +36,14 @@ public class DriverManager {
 
         if (browserType.toLowerCase().contains("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--start-maximized");
+            driver = new ChromeDriver(chromeOptions);
         } else if (browserType.toLowerCase().contains("firefox")) {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            FirefoxOptions firefoxOptions = new FirefoxOptions();
+            firefoxOptions.addArguments("--start-maximized");
+            driver = new FirefoxDriver(firefoxOptions);
         } else if (browserType.toLowerCase().contains("safari")) {
             WebDriverManager.safaridriver().setup();
             driver = new SafariDriver();

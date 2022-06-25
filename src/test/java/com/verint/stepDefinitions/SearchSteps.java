@@ -7,6 +7,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 import java.sql.Driver;
@@ -15,15 +16,15 @@ public class SearchSteps {
 
     private final DriverManager driverManager;
     private WebDriver driver;
-    private final SearchPage searchPage;
+    private SearchPage searchPage;
     public SearchSteps() {
-        this.searchPage = new SearchPage();
         this.driverManager = new DriverManager();
     }
 
     @Before
     public void settingUp() {
         this.driver = driverManager.getWebDriver();
+        this.searchPage = new SearchPage(driver);
     }
 
     @After
@@ -38,16 +39,17 @@ public class SearchSteps {
 
     @Given("User is on the search page")
     public void userIsOnTheSearchPage() {
-        driver.navigate().to("https://www.google.com/");
+        searchPage.clickSearch();
     }
 
     @When("User enter the term {string}")
     public void userEnterTheTerm(String arg0) {
-        driver.navigate().to("https://www.youtube.com/");
+        searchPage.setSearchInput(arg0);
     }
 
     @Then("User sees an article that mentions the term {string}")
     public void userSeesAnArticleThatMentionsTheTerm(String arg0) {
-        driver.quit();
+        Assert.assertTrue("None of the article's title contains \"" + arg0 +"\"",
+                searchPage.validateArticle(arg0));
     }
 }
