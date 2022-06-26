@@ -20,14 +20,14 @@ public abstract class InteractionUtil {
     }
 
     public WebElement clickElement(By by) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
         element.click();
         return element;
     }
 
     public WebElement setElement(By by, String input) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
         for (char i : input.toCharArray()) {
@@ -37,10 +37,10 @@ public abstract class InteractionUtil {
     }
 
     public boolean validateElementsText(By by, String expectedText) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
         } catch (TimeoutException e) {
             return false;
         }
