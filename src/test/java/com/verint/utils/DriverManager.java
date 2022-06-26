@@ -1,6 +1,7 @@
 package com.verint.utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,17 +19,17 @@ public class DriverManager {
     private final String browserType;
     private final int timeOut;
     private WebDriver driver;
-    public DriverManager() {
-        ConfigReader reader = new ConfigReader();
-        browserType = reader.getBrowser();
-        timeOut = reader.getTimeOut();
+    public DriverManager(ConfigReader configReader) {
+        browserType = configReader.getBrowser();
+        timeOut = configReader.getTimeOut();
     }
     public WebDriver getWebDriver() {
         if (browserType.toLowerCase().contains("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--start-maximized");
-            // chromeOptions.addArguments("--headless");
+            //chromeOptions.addArguments("--start-maximized");
+            chromeOptions.addArguments("window-size=1366,768");
+            //chromeOptions.addArguments("--headless");
             driver = new ChromeDriver(chromeOptions);
         } else if (browserType.toLowerCase().contains("firefox")) {
             WebDriverManager.firefoxdriver().avoidBrowserDetection().setup();

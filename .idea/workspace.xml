@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Add and implement locator for both mobile and desktop elements">
+    <list default="true" id="93dd65df-9a94-47e0-b32d-682502de5e3c" name="Changes" comment="Fix minor typing on Search.feature file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/stepDefinitions/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/verint/utils/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/verint/utils/DriverManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/keven/GitHub/WebAutomationVerintTest/src/test/java/com/verint/stepDefinitions&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/keven/GitHub/selenium-cucumber-framework&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -49,7 +51,7 @@
       <recent name="com.verint.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="JUnit.com.verint.runner in WebAutomationVerintTest">
     <configuration name="Feature: Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Search.feature" />
@@ -87,8 +89,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.verint.runner in WebAutomationVerintTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebAutomationVerintTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.verint.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.verint.runner" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.verint.runner in WebAutomationVerintTest" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: Search" />
       </list>
@@ -166,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656216123022</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix minor typing on Search.feature file">
+      <created>1656226930641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656226930641</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,7 +214,8 @@
     <MESSAGE value="Add README file" />
     <MESSAGE value="Remove unnecessary line break and whitespace" />
     <MESSAGE value="Add and implement locator for both mobile and desktop elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add and implement locator for both mobile and desktop elements" />
+    <MESSAGE value="Fix minor typing on Search.feature file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix minor typing on Search.feature file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,7 @@
 package com.verint.stepDefinitions;
 
 import com.verint.pages.SearchPage;
+import com.verint.utils.ConfigReader;
 import com.verint.utils.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,10 +13,13 @@ import org.openqa.selenium.WebDriver;
 
 public class SearchSteps {
     private final DriverManager driverManager;
+    private final ConfigReader configReader;
     private WebDriver driver;
     private SearchPage searchPage;
+
     public SearchSteps() {
-        this.driverManager = new DriverManager();
+        this.configReader = new ConfigReader();
+        this.driverManager = new DriverManager(configReader);
     }
 
     @Before
@@ -31,7 +35,7 @@ public class SearchSteps {
 
     @Given("User is on Verint website")
     public void userIsOnVerintWebsite() {
-        driver.get("https://www.verint.com/");
+        driver.get(configReader.getUrl());
     }
 
     @Given("User is on the search page")

@@ -28,26 +28,24 @@ public class SearchPage extends InteractionUtil {
     // Methods that interact with the page
     public void clickSearch() {
         try {
-            clickElement(searchButtonMobile);
+            clickElement(searchButtonDesktop);
         } catch(TimeoutException e) {
-            System.err.println("Search button is not on mobile section");
             try {
-                clickElement(searchButtonDesktop);
+                clickElement(searchButtonMobile);
             } catch(TimeoutException err) {
-                err.printStackTrace();
+                throw new TimeoutException("The search button cannot be found");
             }
         }
     }
 
     public void setSearchInput(String input) {
         try {
-            setElement(searchInputMobile, input);
+            setElement(searchInputDesktop, input);
         } catch(TimeoutException e) {
-            System.err.println("Search input is not on mobile section");
             try {
-                setElement(searchInputDesktop, input);
+                setElement(searchInputMobile, input);
             } catch(TimeoutException err) {
-                err.printStackTrace();
+                throw new TimeoutException("The search input bar cannot be found");
             }
         }
     }
