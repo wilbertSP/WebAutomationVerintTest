@@ -15,6 +15,10 @@ This is an automation project that utilizes Selenium java and Cucumber
 ```shell
 $ mvn clean install
 ```
+3. To rerun the test again, execute the script below
+```shell
+$ mvn test
+```
 
 ## Reports
 The reports will be automatically generated inside the target folder under the name of `cucumber-reports.html`
